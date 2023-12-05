@@ -15,7 +15,7 @@
         <!-- Assume test is the database name -->
 
         <property name = "hibernate.connection.url">
-            jdbc:mysql://localhost/test?createDatabaseIfNotExist=true
+            jdbc:mysql://localhost/customer?createDatabaseIfNotExist=true
         </property>
 
         <property name = "hibernate.connection.username">
@@ -27,8 +27,9 @@
         </property>
 
         <!-- List of XML mapping files -->
-        <mapping class="fr.sdv.entity.Employee" />
-        <mapping class="fr.sdv.entity.Salary" />
+        <mapping class="fr.sdv.entity.Customer" />
+        <mapping class="fr.sdv.entity.MicroMarket" />
+        <mapping class="fr.sdv.entity.Discount" />
 
     </session-factory>
 </hibernate-configuration>

@@ -1,4 +1,4 @@
-package entities;
+package fr.sdv.dao;
 
 import java.util.List;
 
@@ -8,6 +8,6 @@ public interface ActionDAO <T>{
     public boolean delete(T o);
     public boolean deleteById(int id);
     public List<T> retrieveAll();
-    public List<T> retrieveById(int id);
+    public T retrieveById(int id);
 
 }
